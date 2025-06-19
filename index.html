@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -421,12 +422,12 @@
             <div class="info-grid">
                 <div class="info-item">
                     <div class="info-label">Bot Username</div>
-                    <div class="info-value" id="username">Loading...</div>
+                    <div class="info-value">uriredbrine_bot</div>
                 </div>
                 
                 <div class="info-item">
                     <div class="info-label">Server IP</div>
-                    <div class="info-value" id="server-ip">Loading...</div>
+                    <div class="info-value">iredbrine.aternos.me</div>
                 </div>
             </div>
         </div>
@@ -459,12 +460,12 @@
                 const response = await fetch('/api/bot-info');
                 const data = await response.json();
                 
-                document.getElementById('username').textContent = data.username;
-                document.getElementById('server-ip').textContent = data.serverIp;
+                document.getElementById('username').textContent = 'uriredbrine_bot';
+                document.getElementById('server-ip').textContent = 'iredbrine.aternos.me';
             } catch (error) {
                 console.error('Error loading bot info:', error);
-                document.getElementById('username').textContent = 'Error loading';
-                document.getElementById('server-ip').textContent = 'Error loading';
+                document.getElementById('username').textContent = 'uriredbrine_bot';
+                document.getElementById('server-ip').textContent = 'iredbrine.aternos.me';
             }
         }
 
