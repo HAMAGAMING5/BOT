@@ -1,4 +1,5 @@
 const mineflayer = require('mineflayer');
+const express = require('express');
 const Movements = require('mineflayer-pathfinder').Movements;
 const pathfinder = require('mineflayer-pathfinder').pathfinder;
 const { GoalBlock, GoalXZ } = require('mineflayer-pathfinder').goals;
@@ -7,6 +8,24 @@ const config = require('./settings.json');
 
 const loggers = require('./logging.js');
 const logger = loggers.logger;
+const app = express();
+
+// Serve static files from public directory
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
+
+// API endpoint to get bot information
+app.get('/api/bot-info', (req, res) => {
+  res.json({
+    username: config['bot-account']['username'],
+    serverIp: `${config.server.ip}:${config.server.port}`
+  });
+});
+
+app.listen(3000);
 
 function createBot() {
    const bot = mineflayer.createBot({
