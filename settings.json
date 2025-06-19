@@ -6,7 +6,7 @@
   },
 
   "server": {
-    "ip": "localhost",
+    "ip": "iredbrine.aternos.me",
     "port": 25565,
     "version": "1.12.2"
   },
