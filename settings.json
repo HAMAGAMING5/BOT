@@ -1,0 +1,62 @@
+{
+  "bot-account": {
+    "username": "iredbrine_bot",
+    "password": "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3",
+    "type": "cracked"
+  },
+
+  "server": {
+    "ip": "localhost",
+    "port": 25565,
+    "version": "1.21.5"
+  },
+
+  "position": {
+    "enabled": true,
+    "x": 123456,
+    "y": 0,
+    "z": 0
+  },
+
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3"
+    },
+
+    "anti-afk": {
+      "enabled": true,
+      "sneak": false,
+      "jump": true,
+      "rotate": true,
+
+      "hit": {
+        "enabled": true,
+        "delay": 1000,
+        "attack-mobs": true
+      },
+
+      "circle-walk": {
+        "enabled": false,
+        "radius": 2
+      }
+    },
+
+    "chat-messages": {
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 60,
+
+      "messages": [
+        "I'm a regular player ",
+        "My owner is iredbrine_ ",
+        "I want be alone ",
+        "Fuck this server"
+      ]
+    },
+
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 3000
+  }
+}
