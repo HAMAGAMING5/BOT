@@ -13,7 +13,7 @@
 
   "position": {
     "enabled": false,
-    "x": 123456,
+    "x": 0,
     "y": 0,
     "z": 0
   },
@@ -21,11 +21,11 @@
   "utils": {
     "auto-auth": {
       "enabled": false,
-      "password": "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3"
+      "password": ""
     },
 
     "anti-afk": {
-      "enabled": true,
+      "enabled": false,
       "sneak": false,
       "jump": true,
       "rotate": false,
