@@ -12,7 +12,7 @@
   },
 
   "position": {
-    "enabled": true,
+    "enabled": false,
     "x": 123456,
     "y": 0,
     "z": 0
@@ -28,7 +28,7 @@
       "enabled": true,
       "sneak": false,
       "jump": true,
-      "rotate": true,
+      "rotate": false,
 
       "hit": {
         "enabled": false,
@@ -55,8 +55,8 @@
       ]
     },
 
-    "chat-log": true,
+    "chat-log": false,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 1000
+    "auto-reconnect-delay": 3000
   }
 }
